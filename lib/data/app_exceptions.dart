@@ -11,6 +11,8 @@ class AppException implements Exception {
 }
 
 class FetchException extends AppException {
+  //Before calling cons of B it will be calling the cons of A
+  //explicitly
   FetchException(String? message)
       : super(message, 'ERROR DURING COMMUNICATION');
 }
